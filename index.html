@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <style type="text/css">
+  	
+  	#logo_img{
+
+  		width: 200px;
+  		height: 60px;
+  	}
+
+  	#invoice_text{
+
+  		font-size: 38px;
+  		font-weight: bold;
+  	}
+
+  	#invoice_text_div{
+  		margin-top: 10px ;
+  	}
+
+  	#invoice_to_text{
+
+  		font-size: 16px;
+
+  	}
+
+  	#name_text{
+
+  		font-size: 22px;
+  		font-weight: bold;
+  		margin-top: -10px;
+  	}
+
+  	#creative_director_text{
+
+  		font-size: 18px;
+  		margin-top: -6px;
+  	}
+
+  	.second_section{
+
+  		margin-top: 30px;
+  		margin-left: 5px;
+  		
+  	}
+
+  	#second_section_div1{
+
+  		line-height: 1px;
+  	}
+
+  	#invoice_date,#invoice_no,#account_no{
+
+  		color: gray;
+  		font-size: 16px;
+  	}
+
+
+  	#address, #mail, #phone{
+
+  		color: gray;
+  		font-size: 14px;
+  	}
+
+  	.thirdsection{
+
+  		margin-top: 30px;
+  		margin-left: 5px;
+  	}
+
+  	#span_address, #span_email, #span_phone{
+
+  		margin-left: 8px;
+  	}
+
+  	#total_due_text{
+
+  		color: gray;
+  		font-weight: bold;
+  	}
+
+  	#total_due_number{
+
+  		color: red;
+  		font-weight: bold;
+  	}
+
+  	.table thead{
+
+  		
+  		background-color: red;
+
+
+  	}
+
+  	th{
+
+  		color: white;
+  	}
+
+  	.table{
+
+  		margin-top: 30px;
+  		border-bottom: 5px solid red;
+  	}
+
+
+  	#payment_method{
+
+  		font-size: 20px;
+  	}
+
+  	#subtotal, #tax, #discount, #subtotal_amount, #tax_amount, #discount_amount{
+
+  		font-size: 14px;
+  		color: gray;
+  	}
+
+  	#fourth_section_div2{
+
+  		margin-left: -20% !important;
+  	}
+
+
+
+  	
+  </style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="container d-flex justify-content-between">
+			<div>
+				<img src="invoice_logo.png" id="logo_img">
+			</div>
+			<div id="invoice_text_div">
+				<h5 id="invoice_text">INVOICE</h5>
+			</div>
+		</div>
+
+		<div class="container d-flex justify-content-between second_section">
+			<div id="second_section_div1">
+				<h4 id="invoice_to_text">Invoice To</h4>
+				<h4 id="name_text">James Smith</h4>
+				<h4 id="creative_director_text">Creative Director</h4>
+			</div>
+			<div id="second_section_div2">
+				<h4 id="invoice_date">Invoice Date #456</h4>
+				<h4 id="invoice_no">Invoice No. #456</h4>
+				<h4 id="account_no">Account No. #456</h4>
+			</div>
+		</div>
+
+
+		<div class="container d-flex justify-content-between thirdsection">
+			<div id="third_section_div1">
+				<h4 id="address"><span>A </span>  <span id="span_address">6598 West Media spancer, usa-568</span></h4>
+				<h4 id="mail"><span>W </span>  <span id="span_email">email@gmail.com, www.myweb.com</span></h4>
+				<h4 id="phone"><span>P </span>  <span id="span_phone">+1-222-333-444</span></h4>
+			</div>
+			<div id="third_section_div2">
+				<h4 id="total_due_text">Total Due:</h4>
+				<h4 id="total_due_number">US $ 55,000.00</h4>
+				
+			</div>
+		</div>
+
+
+		<div>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Item Description</th>
+						<th><i class='fas fa-chevron-circle-right' style='font-size:20px;color:white'></i></th>
+						<th>Unit Price</th>
+						<th><i class='fas fa-chevron-circle-right' style='font-size:20px;color:white'></i></th>
+						<th>Quantity</th>
+						<th><i class='fas fa-chevron-circle-right' style='font-size:20px;color:white'></i></th>
+						<th>Total</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td class="font-weight-bold" style="width: 30%">Hosting Plan <p class="font-weight-normal" style="color: gray;font-size: 14px;">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem </p></td>
+						<td></td>
+						<td>$150</td>
+						<td></td>
+						<td>02</td>
+						<td></td>
+						<td>$300</td>
+					</tr>
+
+					<tr>
+						<td class="font-weight-bold" style="width: 30%">Hosting Plan <p class="font-weight-normal" style="color: gray;font-size: 14px;">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem </p></td>
+						<td></td>
+						<td>$150</td>
+						<td></td>
+						<td>02</td>
+						<td></td>
+						<td>$300</td>
+					</tr>
+
+					<tr>
+						<td class="font-weight-bold" style="width: 30%">Hosting Plan <p class="font-weight-normal" style="color: gray;font-size: 14px;">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem </p></td>
+						<td></td>
+						<td>$150</td>
+						<td></td>
+						<td>02</td>
+						<td></td>
+						<td>$300</td>
+					</tr>
+
+					<tr>
+						<td class="font-weight-bold" style="width: 30%">Hosting Plan <p class="font-weight-normal" style="color: gray;font-size: 14px;">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem </p></td>
+						<td></td>
+						<td>$150</td>
+						<td></td>
+						<td>02</td>
+						<td></td>
+						<td>$300</td>
+					</tr>
+
+					<tr>
+						<td class="font-weight-bold" style="width: 30%">Hosting Plan <p class="font-weight-normal" style="color: gray;font-size: 14px;">Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem </p></td>
+						<td></td>
+						<td>$150</td>
+						<td></td>
+						<td>02</td>
+						<td></td>
+						<td>$300</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<div class="container d-flex  fourth_section mt-2">
+			<div id="fourth_section_div1">
+				<h4 id="payment_method">Payment Methods</h4>
+
+				<div class="d-flex mt-3">
+					<div>
+					<h4 class="font-weight-bold"><i>Paypal</i></h4>
+					<p class="font-weight-normal">lorem</p>
+					
+				</div>
+
+				<div class="ml-5">
+					<h4 class="font-weight-bold"><i>Skrills</i></h4>
+					<p class="font-weight-normal">lorem</p>
+					
+				</div>
+				</div>
+
+
+			
+			</div>
+			<div id="fourth_section_div2 ml-5" style="margin-left: 50%">
+				<h4 id="subtotal" class="ml-14">Sub Total:</h4>
+				<h4 id="tax">Tax(Vat 5.5%)</h4>
+				<h4 id="discount">Discount(2%)</h4>
+			</div>
+
+			<div id="fourth_section_div3" style="margin-left: 19%">
+				<h4 id="subtotal_amount">$1500.00</h4>
+				<h4 id="tax_amount">$450.00</h4>
+				<h4 id="discount_amount">$120.00</h4>
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-end" >
+			<div style="background-color: red;padding: 10px">
+				<h4 style="color: white">Grand Total</h4>
+			</div>
+			<div style="background-color: red;padding: 10px">
+				<h4 style="color: white">$100000</h4>
+			</div>
+		</div>
+
+
+		<div class="text-center mt-5">
+			
+			<h4>Thank you for your business</h4>
+		</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
